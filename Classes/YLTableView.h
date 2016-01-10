@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h>
 
 @class YLRefreshHeaderView;
 
@@ -21,7 +22,7 @@ typedef NS_ENUM(NSInteger, YLTableViewState) {
   YLTableViewStateErrored,
 };
 
-@interface YLTableView : UITableView
+@interface YLTableView : TPKeyboardAvoidingTableView
 
 //! If you want to use a refresh header, set this to a subclass of YLRefreshHeaderView
 @property (strong, nonatomic, nullable) YLRefreshHeaderView *refreshHeaderView;
